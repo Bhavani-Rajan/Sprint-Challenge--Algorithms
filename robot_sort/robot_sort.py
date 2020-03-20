@@ -95,7 +95,21 @@ class SortingRobot:
     def sort(self):
         """
         Sort the robot's list.
+        
         """
+        # bubble sort
+        # pick the first item in the list
+        # switch the head light on
+        # walk right compare the next item in the list
+        # if its < the item its holding swap
+        # keep the head light on.
+        # compare the next two items until the end of list.
+        # swaping the items thats less to the left.
+        # when it reaches the end of right, walk left comparing next two items now check it the item is greater.
+        # do this until it reach the left end
+        # when no swaping happens, switch off the head light 
+        # and the list is sorted
+        
         # Fill this out
         pass
 
