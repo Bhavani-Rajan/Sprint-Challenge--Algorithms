@@ -7,13 +7,13 @@ a)  condition is checking for n^3 and inside the loop its adding n^2, So this lo
 
 
 b)  for loop executes n times
-    while loop executes (n/2 ) times
-    The time complexity will be O(n* (n /2))
+    while loop executes log n  times
+    The time complexity will be O(n* log n)
     
 
 
 c)  This recursion function will be executed n + 2 times for every n bunnies.
-    The time complexity will be O(n * n).
+    The time complexity will be O(n).
     Also, since Cache is not used, the program will give error in 2960 time.
 
 ## Exercise II

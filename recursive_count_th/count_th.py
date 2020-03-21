@@ -3,17 +3,22 @@ Your function should take in a single parameter (a string `word`)
 Your function should return a count of how many occurences of ***"th"*** occur within `word`. Case matters.
 Your function must utilize recursion. It cannot contain any loops.
 '''
-cache = {'c':0}
+
 
 def count_th(word):
-    #print(word)
+    count = 0
+    return count_th_helper(word,count)
+
+def count_th(word):
+    count = {'c':0}
+    return helper(word,count)
+
+def helper(word,count):
     if (word == ""):
-     return 0
+         return 0
     elif (word[-2:] == "th"):
-        #print(" found th")
-        cache['c'] += 1
-        count_th(word[:-1])
+        count['c'] += 1
+        helper(word[:-1],count)
     else: 
-        #print("not found")
-        count_th(word[:-1])
-    return cache['c']
+        helper(word[:-1],count)
+    return count['c']
